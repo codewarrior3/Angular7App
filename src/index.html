@@ -13,22 +13,24 @@
     <div class="navbar">
       <nav>
           <a href="home" routerLink="/home" routerLinkActive="active">Home</a>
-        <a href="about" routerLink="/about" routerLinkActive="active">About</a>
-        <a href="contact" routerLink="/contact" routerLinkActive="active">Contact</a>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <nav>
+          <a href="contact" routerLink="/contact" routerLinkActive="active">Contact</a>
+          <a href="about" routerLink="/about" routerLinkActive="active">About</a>
       </nav>
       <div [@routeAnimation]="getAnimationData(routerOutlet)">
         <router-outlet #routerOutlet="outlet"></router-outlet>
       </div>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div> 
       </div>
 </body>
 </html>
