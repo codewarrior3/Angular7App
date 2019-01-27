@@ -6,13 +6,13 @@ import { PageComponent } from './page/page.component';
 const appRoutes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'home', component: PageComponent, data: {
-      page: 'home'
+      page: 'home', title: 'Home Page'
     }},
     {path: 'about', component: PageComponent, data: {
-      page: 'about'
+      page: 'about', title: 'About Page'
     }},
     {path: 'contact', component: PageComponent, data: {
-      page: 'contact'
+      page: 'contact', title: 'Contact Page'
     }},
     {path: '**', redirectTo: '/home', pathMatch: 'full'}
   ];
